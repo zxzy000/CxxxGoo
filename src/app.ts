@@ -313,7 +313,7 @@ app.use(bodyParser.json());
 app.use(enableCORS);
 
 // Route to handle POST requests for chat completions
-app.post("/v1/chat/completions", handleChatCompletion);
+app.post("/proxies/v1/chat/completions", handleChatCompletion);
 
 // 404 handler for unmatched routes
 app.use((req, res) =>
